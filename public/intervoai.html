@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IntervoAI | CareerLoop</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="feature-page">
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="site-shell">
+    <header class="site-header glass">
+      <a class="brand" href="index.html">
+        <div class="brand-mark">CL</div>
+        <div>
+          <strong>CareerLoop</strong>
+          <span>Build your future loop by loop</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="community.html" class="">Community</a>
+<a href="classlytics.html" class="">Classlytics</a>
+<a href="resuvoai.html" class="">ResuvoAI</a>
+<a href="sylloai.html" class="">SylloAI</a>
+<a href="intervoai.html" class="active">IntervoAI</a>
+<a href="skillswap.html" class="">SkillSwap</a>
+<a href="dashboard.html" class="">Dashboard</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="ghost-btn" id="openSignin">Sign In</button>
+        <button class="menu-btn" id="openSidebar" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+
+    <aside class="mobile-sidebar" id="mobileSidebar">
+      <div class="sidebar-top">
+        <strong>CareerLoop</strong>
+        <button id="closeSidebar" class="icon-btn">✕</button>
+      </div>
+      <nav class="sidebar-links"><a href="community.html">Community</a>
+<a href="classlytics.html">Classlytics</a>
+<a href="resuvoai.html">ResuvoAI</a>
+<a href="sylloai.html">SylloAI</a>
+<a href="intervoai.html">IntervoAI</a>
+<a href="skillswap.html">SkillSwap</a>
+<a href="dashboard.html">Dashboard</a></nav>
+    </aside>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main>
+      <section class="page-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">CareerLoop Platform</p>
+          <h1>IntervoAI for interview practice</h1>
+          <p class="hero-desc">Simulate job interview practice with role-based questions and answer feedback.</p>
+        </div>
+      </section>
+
+      
+<section class="section two-col">
+  <div class="glass panel">
+    <div class="section-head left"><p class="eyebrow">Interview Trainer</p><h2>Practice answers and improve confidence.</h2></div>
+    <form id="interviewForm" class="stack-form ai-form">
+      <input id="interviewRole" type="text" placeholder="Role, e.g. Data Analyst Intern" />
+      <textarea id="interviewAnswer" rows="10" placeholder="Paste your interview answer or ask for mock questions..."></textarea>
+      <button type="submit" class="primary-btn">Train with IntervoAI</button>
+    </form>
+  </div>
+  <div class="glass panel">
+    <div class="section-head left"><p class="eyebrow">Interview Feedback</p><h2>IntervoAI output</h2></div>
+    <div id="interviewResult" class="ai-result">Practice introductions, behavioral questions, technical questions, and confidence-building responses.</div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="site-footer glass">
+      <div>
+        <strong>CareerLoop</strong>
+        <p>Learn. Connect. Grow. Repeat.</p>
+      </div>
+      <div class="footer-links">
+        <a href="community.html">Community</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="resuvoai.html">AI Tools</a>
+      </div>
+      <p>© 2026 CareerLoop. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <div class="modal-backdrop hidden" id="signinModal">
+    <div class="modal glass">
+      <div class="modal-top">
+        <h3>Sign In</h3>
+        <button class="icon-btn" id="closeSignin">✕</button>
+      </div>
+      <form class="signin-form">
+        <input type="text" placeholder="Full name" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button type="button" class="primary-btn">Continue</button>
+      </form>
+    </div>
+  </div>
+
+  <button class="chatbot-fab" id="chatbotFab">💬</button>
+  <section class="chatbot glass hidden" id="chatbotPanel">
+    <div class="chatbot-top">
+      <div>
+        <strong>CareerBot</strong>
+        <p>Your AI study and career guide</p>
+      </div>
+      <button class="icon-btn" id="chatbotClose">✕</button>
+    </div>
+    <div class="chatbot-messages" id="chatbotMessages">
+      <div class="bot-msg">Hi! Ask me about resumes, interviews, study planning, attendance, or skills.</div>
+    </div>
+    <div class="chatbot-input">
+      <input id="chatbotInput" type="text" placeholder="Ask CareerBot anything..." />
+      <button class="primary-btn" id="chatbotSend">Send</button>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
