@@ -1,7 +1,5 @@
 🚀 CareerLoop
 
-CareerLoop is an all-in-one student productivity and career development platform that combines AI tools, analytics, and peer learning to help students grow smarter and faster.
-
 🌟 Features
 🧑‍🤝‍🧑 Community
 Share doubts, notes, and ideas
@@ -144,9 +142,11 @@ Charts & analytics graphs
 Payment integration
 Real-time chat system
 Deployment (Vercel / Render)
-👨‍💻 Author
 
-Resham Singh
+👨‍💻 Author:
+Resham Singh 2510992805
+Sahaj 2510992730
+Vansh Goyal 2510993525
 
 💡 Vision
 
